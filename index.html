@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-<h1 class="text-[clamp(2rem,5vw,3rem)] font-bold text-neutral mb-4 text-center">捐个几块钱，支持一下</h1>
-		<img src="PayQrcode.png" width="600" height="900">
-	</head>
-	<body>
-	</body>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑色主题按钮页面</title>
+    <style>
+        /* 重置默认样式并设置整体布局 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* 让padding和border包含在元素的总宽度内 */
+        }
+
+        body {
+            background-color: #000; /* 设置黑色背景 */
+            color: white; /* 设置文字颜色为白色以保证可读性 */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 使用系统默认字体，美观且通用 */
+            display: flex; /* 使用弹性布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            min-height: 100vh; /* 让body至少占满整个视口高度 */
+            padding: 20px; /* 防止内容紧贴边缘 */
+        }
+
+        .container {
+            text-align: center; /* 让容器内的内容居中对齐 */
+            max-width: 600px; /* 限制最大宽度，防止在大屏幕上过宽 */
+        }
+
+        h1 {
+            margin-bottom: 2rem; /* 标题下方留出空间 */
+            font-size: 2rem; /* 设置标题大小 */
+        }
+
+        /* 定义按钮的基础样式 */
+        .custom-button {
+            display: inline-block; /* 让按钮像行内元素一样排列 */
+            padding: 15px 30px; /* 内边距，让按钮看起来更大更舒适 */
+            margin: 10px; /* 外边距，给按钮之间留出空隙 */
+            font-size: 1rem; /* 字体大小 */
+            color: white; /* 文字颜色 */
+            background-color: #333; /* 按钮的初始背景色 */
+            border: none; /* 去掉默认边框 */
+            border-radius: 5px; /* 添加圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            text-decoration: none; /* 去掉链接的下划线 */
+            transition: all 0.3s ease; /* 为所有属性添加一个0.3秒的过渡动画 */
+            text-align: center; /* 确保按钮内文字居中 */
+        }
+
+        /* 定义按钮的悬停效果 */
+        .custom-button:hover {
+            background-color: #555; /* 悬停时改变背景色 */
+            transform: translateY(-2px); /* 悬停时向上轻微移动，增加立体感 */
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* 添加一个白色的阴影 */
+        }
+
+        /* 定义按钮被点击时的效果 */
+        .custom-button:active {
+            transform: translateY(0); /* 点击时恢复原位 */
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* 调整阴影 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>sdsktt的主页</h1>
+        <img src="avatarHead.png" width="150"/>
+        <!-- 使用 <a> 标签创建按钮 -->
+        <!-- 将按钮样式应用到 <a> 标签上，使其看起来像按钮 -->
+        <a href="https://space.bilibili.com/1443193042" class="custom-button" target="_blank">访问我的哔哩哔哩</a>
+        
+        <a href="https://link.jiyiho.cn/orfile/down.php/15bd2d4e4d6670d38d0c1029b93fc9c4.zip" class="custom-button" target="_blank">下载"[SdSktt-适用1.8和1.20.1]pack-v1.0"</a>
+    </div>
+</body>
 </html>
